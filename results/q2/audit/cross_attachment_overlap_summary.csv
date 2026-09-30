@@ -1,0 +1,8 @@
+pair,key_method,left_rows,right_rows,overlap_count,note
+B1:B3,exact_N_D,1176,4000,16,B3 interpolated; shared points are not independent
+B1:B2,exact_N_D,1176,1029,0,exact scale/token only; provenance differs
+B6:B7,experiment_id,360,450,360,
+B6:B8,exact_N_D_Q,360,1704,160,configuration overlap does not prove equal provenance
+B7:B8,exact_N_D_Q,450,1704,224,configuration overlap does not prove equal provenance
+B9:B10,exact_model_name,132,128,128,B10 family acts as model name
+B9:B10,exact_N_D,132,128,119,

@@ -1,0 +1,5 @@
+evaluation,model,macro_nrmse_train_scale,n_folds
+random_repeated_cv_v2,Ridge,0.6280431555462537,50
+random_repeated_cv_v2,LightGBM,0.16623583773254233,50
+cluster_group_cv_v2_1,LightGBM,0.23905564888750078,5
+cluster_group_cv_v2_1,Ridge,0.8531884631752075,5

@@ -1,0 +1,20 @@
+{
+  "experiment_version": "q2_v5",
+  "stage": "P00",
+  "seed": 7,
+  "input_roots": [
+    "data/real_attachments/B_scaling_laws",
+    "docs/算力约束下提升大语言模型能力的资源配置建模.docx",
+    "docs/数据说明.pdf"
+  ],
+  "forbidden_paths": [
+    "data/real_attachments/A_data_value",
+    "src/q2_v2",
+    "src/q2_v3",
+    "src/q2_v4",
+    "results/q2_scaling_v1",
+    "results/q2_scaling_v2",
+    "results/q2_v3"
+  ],
+  "output_root": "results/q2_v5/00_manifest"
+}

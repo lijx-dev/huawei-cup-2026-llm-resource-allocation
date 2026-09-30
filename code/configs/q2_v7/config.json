@@ -1,0 +1,15 @@
+{
+  "version": "q2_v7",
+  "seed": 7,
+  "bootstrap_replicates": 60,
+  "quality_reference": 0.5,
+  "lambda_scenarios": [0.0, 0.5, 1.0, 1.5],
+  "theta_scenarios": [-0.5, 0.0, 0.5],
+  "scenario_quality_levels": [0.3, 0.5, 0.7],
+  "workpoint": {"N_params_B": 1.0, "D_tokens_B": 150.0, "Q_B": 0.5},
+  "compute_budgets_1e21": [0.3, 0.9, 3.0],
+  "compute_bounds": {"N_params_B": [0.07, 11.97], "D_tokens_B": [10.0, 600.0]},
+  "input_zip": "团队交接包_问题一接口 (2).zip",
+  "input_b_dir": "data/real_attachments/B_scaling_laws",
+  "output_dir": "results/q2_v7"
+}

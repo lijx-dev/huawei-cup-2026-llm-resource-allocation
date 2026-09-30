@@ -1,0 +1,13 @@
+{
+  "raw_quality_rows": 272505,
+  "accepted_source_rows": 272475,
+  "valid_unique": 261056,
+  "status_counts": {
+    "valid": 261056,
+    "duplicate_exact": 11419,
+    "rejected_corrupt": 19,
+    "suspected_unreliable": 11
+  },
+  "v2_model_sha256_in_metadata": false,
+  "v2_model_file_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33"
+}

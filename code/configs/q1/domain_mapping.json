@@ -1,0 +1,11 @@
+{
+  "version": "q1-m3-map-v1",
+  "quality_view": "A1",
+  "feature_columns": ["sample_rows", "avg_text_chars"],
+  "transform": "natural_log_then_zscore_population",
+  "reference_types": ["direct", "near_direct"],
+  "primary_temperature": 1.0,
+  "sensitivity_temperatures": [0.5, 2.0],
+  "mapping_policy": "A16 direct and near_direct are fixed; inferred use A17 feature softmax across six represented quality domains as exploratory low-confidence proxy; c4 has no representative",
+  "quality_model_version": "q1-p1-v1"
+}

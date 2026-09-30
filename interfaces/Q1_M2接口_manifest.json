@@ -1,0 +1,81 @@
+{
+  "artifact": "Q1_M2响应接口",
+  "created_utc": "2026-09-25T05:52:53Z",
+  "role": "问题一输出：M2 配比响应冻结接口，供问题二只读消费",
+  "source_coefficients": "q1_quality_results/mix_final_model_quad.csv",
+  "source_coefficients_sha256": "9b2e45abab19cf4b38d8beeafb4d559fb2f9738f0b12560fbb3b26713c9739f6",
+  "interface_sha256": "32d0a2f71016e60f7deeb0584637c1db5038caa1d40cd6d13822b06705c759ef",
+  "n_rows": 577,
+  "coordinate_space": [
+    "arxiv",
+    "freelaw",
+    "pubmed_central",
+    "wikipedia_en",
+    "dm_mathematics",
+    "github",
+    "stackexchange",
+    "gutenberg_pg_19",
+    "pile_cc",
+    "ubuntu_irc",
+    "hackernews",
+    "pubmed_abstracts",
+    "other"
+  ],
+  "reference_domain": "uspto_backgrounds",
+  "loss_targets": [
+    "arxiv",
+    "freelaw",
+    "pubmed_central",
+    "wikipedia_en",
+    "dm_mathematics",
+    "github",
+    "stackexchange",
+    "gutenberg_pg_19",
+    "pile_cc",
+    "ubuntu_irc",
+    "hackernews",
+    "pubmed_abstracts",
+    "uspto_backgrounds"
+  ],
+  "quadratic_domains": [
+    "dm_mathematics",
+    "github",
+    "freelaw",
+    "arxiv",
+    "ubuntu_irc",
+    "hackernews"
+  ],
+  "p0_convention": "A4 训练配方逐域算术均值，仅对舍入误差归一化；参考配方而非最优配比",
+  "p0_13coords": [
+    0.11300390625,
+    0.09680859374999999,
+    0.113728515625,
+    0.075078125,
+    0.025460937500000003,
+    0.110689453125,
+    0.09942382812499999,
+    0.046912109375,
+    0.119482421875,
+    0.019599609375,
+    0.0116484375,
+    0.066173828125,
+    0.026322265625
+  ],
+  "h_p_definition": "h_{p,v}(p) = log Lhat_v(p) - log Lhat_v(p0) = log Lhat_v(p) - a_v",
+  "aggregation": "h_p_eq = 等权平均 13 目标（主口径）",
+  "hull_counts": {
+    "A6-A7 (1M)": "13 维 8/256；14 维 2/256；17 维原始 0/256",
+    "A8-A9 (60M)": "13 维 8/256；14 维 2/256；17 维原始 0/256",
+    "A10-A11 (1B)": "13 维 28/64；14 维 14/64；17 维原始 8/64"
+  },
+  "self_checks": {
+    "h_p(p0) 逐目标最大值": 0.0,
+    "h_p(p0) 通过 (<1e-12)": true,
+    "logLhat(p0) 与截距最大偏差": 0.0,
+    "logLhat(p0)=a_v 通过 (<1e-12)": true,
+    "h_p_eq(p0) 通过": true,
+    "复读 h_p(p0) 最大绝对值": 0.0,
+    "复读校验通过": true
+  },
+  "read_only_rule": "问题二只读本接口与 manifest；不得再读取附件 A 的配比—损失原始表"
+}

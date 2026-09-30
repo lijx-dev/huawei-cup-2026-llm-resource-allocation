@@ -1,0 +1,13 @@
+measure,attachment,high_set_method,incident_pair_share,incident_pairs_in_top10
+weighted,A1,C_equal_indicator,0.29663316181283195,4
+weighted,A1,C_weighted_hierarchical,0.3055377347722903,4
+weighted,A2,C_equal_indicator,0.22771968588523847,3
+weighted,A2,C_weighted_hierarchical,0.22826696414708153,3
+weighted,A3,C_equal_indicator,0.2708666695486369,3
+weighted,A3,C_weighted_hierarchical,0.2824019891123133,3
+equal,A1,C_equal_indicator,0.10523766765677507,3
+equal,A1,C_weighted_hierarchical,0.11062078049126417,4
+equal,A2,C_equal_indicator,0.10503828103776693,0
+equal,A2,C_weighted_hierarchical,0.10431322173609817,0
+equal,A3,C_equal_indicator,0.09589524295364686,5
+equal,A3,C_weighted_hierarchical,0.10298555458742081,5

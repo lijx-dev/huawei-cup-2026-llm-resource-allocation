@@ -1,0 +1,13 @@
+{
+  "experiment_version": "q2-scaling-v2",
+  "seed": 7,
+  "bootstrap_replicates": 60,
+  "b6_group_folds": 5,
+  "q_reference_rule": "B6 median Q_score",
+  "lambda_scenarios": [0, 0.5, 1, 1.5],
+  "q1_model": "LightGBM",
+  "q1_aggregate_weights": "equal_thirteen",
+  "compute_budget_rule": "6*N_billions*D_billions in 1e18 FLOPs; levels from B6 N*D quantiles 0.1,0.5,0.9",
+  "optimization_bounds_rule": "B6 observed min/max for both N and D",
+  "nonlinear_candidate_rule": "retain only if B6 group-CV macro RMSE improves at least 2 percent, never use B7 for selection"
+}

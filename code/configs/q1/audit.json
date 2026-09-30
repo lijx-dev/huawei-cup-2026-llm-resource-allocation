@@ -1,0 +1,12 @@
+{
+  "rule_version": "q1-p0-v1",
+  "mixture_sum_tolerance": 0.008500001,
+  "provisional_percentage_upper_bound": 100,
+  "quality_expected_rows": {"A1": 51230, "A2": 17523, "A3": 203752},
+  "quality_list_fields": ["fineweb_edu", "fluency_en", "modernbert_cleanliness", "modernbert_readability", "modernbert_reasoning", "modernbert_professionalism", "qurater", "ad_en"],
+  "quality_scalar_fields": ["dsir_books", "dsir_wiki", "dsir_math", "rps_doc_word_count", "rps_doc_num_sentences", "rps_doc_unigram_entropy", "rps_doc_frac_unique_words", "rps_doc_frac_no_alph_words", "rps_doc_frac_chars_top_2gram", "rps_doc_frac_chars_top_3gram", "rps_lines_uppercase_letter_fraction", "rps_lines_ending_with_terminal_punctution_mark", "rps_lines_numerical_chars_fraction", "rps_doc_mean_word_length"],
+  "fraction_fields": ["rps_doc_frac_unique_words", "rps_doc_frac_no_alph_words", "rps_doc_frac_chars_top_2gram", "rps_doc_frac_chars_top_3gram", "rps_lines_uppercase_letter_fraction", "rps_lines_ending_with_terminal_punctution_mark", "rps_lines_numerical_chars_fraction"],
+  "count_fields": ["rps_doc_word_count", "rps_doc_num_sentences", "rps_doc_mean_word_length"],
+  "mixture_fields": ["train_the_pile_arxiv", "train_the_pile_freelaw", "train_the_pile_nih_exporter", "train_the_pile_pubmed_central", "train_the_pile_wikipedia_en", "train_the_pile_dm_mathematics", "train_the_pile_github", "train_the_pile_philpapers", "train_the_pile_stackexchange", "train_the_pile_enron_emails", "train_the_pile_gutenberg_pg_19", "train_the_pile_pile_cc", "train_the_pile_ubuntu_irc", "train_the_pile_europarl", "train_the_pile_hackernews", "train_the_pile_pubmed_abstracts", "train_the_pile_uspto_backgrounds"],
+  "loss_fields": ["metric/the_pile_arxiv_val_loss", "metric/the_pile_freelaw_val_loss", "metric/the_pile_pubmed_central_val_loss", "metric/the_pile_wikipedia_en_val_loss", "metric/the_pile_dm_mathematics_val_loss", "metric/the_pile_github_val_loss", "metric/the_pile_stackexchange_val_loss", "metric/the_pile_gutenberg_pg_19_val_loss", "metric/the_pile_pile_cc_val_loss", "metric/the_pile_ubuntu_irc_val_loss", "metric/the_pile_hackernews_val_loss", "metric/the_pile_pubmed_abstracts_val_loss", "metric/the_pile_uspto_backgrounds_val_loss"]
+}

@@ -1,0 +1,25 @@
+claim,evidence_grade,scope
+B1_E,direct_fit,B1 reported trajectory
+B1_A,direct_fit,B1 reported trajectory
+B1_B,direct_fit,B1 reported trajectory
+B1_alpha,direct_fit,B1 reported trajectory
+B1_beta,direct_fit,B1 reported trajectory
+B1_LOSO_macro_RMSE,held_out_validation,B1 reported trajectory
+B6_MQ_gamma,semi_synthetic_calibration,B6/B7 semi_synthetic
+B6_M0_groupCV_RMSE,semi_synthetic_calibration,B6/B7 semi_synthetic
+B6_MQ_groupCV_RMSE,semi_synthetic_calibration,B6/B7 semi_synthetic
+B7_new_M0_RMSE,held_out_validation,B6/B7 semi_synthetic
+B7_new_MQ_RMSE,held_out_validation,B6/B7 semi_synthetic
+B8_positive_Q_Loss_groups,semi_synthetic_calibration,B8 semi_synthetic stress
+medium_budget_Q0_N_star_billions,scenario_assumption,conditional C≈6ND scenario
+medium_budget_Q0_D_star_billions,scenario_assumption,conditional C≈6ND scenario
+B10_B1_estimated_RMSE,extrapolation_reference,B1 reported trajectory
+B2 semi-synthetic transfer,semi_synthetic_calibration,cross-source Loss protocol uncertain
+B3 interpolated trajectory,semi_synthetic_calibration,interpolation consistency only
+B4/B5 trend transfer,held_out_validation,reported cross-family/literature with incompatible absolute Loss risk
+B8 direction stress,semi_synthetic_calibration,Q encoding equivalence unverified
+Q_A/Q_B non-equivalence policy,imported_Q1,distinct source definitions
+"Q1 h_p,v",imported_Q1,17-mixture to 13-loss frozen model
+lambda_p/Forms A-B,scenario_assumption,B lacks p
+marginals/local substitution/compute optimum,scenario_assumption,conditional model outputs under C≈6ND
+B9/B10 large-scale reference,extrapolation_reference,"estimated Loss, not independent observation"

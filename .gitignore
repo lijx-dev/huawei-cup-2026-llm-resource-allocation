@@ -1,0 +1,6 @@
+﻿*.pyc
+__pycache__/
+.matplotlib_cache/
+*.egg-info/
+.pytest_cache/
+.DS_Store

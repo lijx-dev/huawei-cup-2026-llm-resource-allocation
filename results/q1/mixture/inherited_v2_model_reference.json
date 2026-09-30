@@ -1,0 +1,28 @@
+{
+  "model_file_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33",
+  "model_hash_anchor_in_v2_metadata": false,
+  "verification_status": "prediction_verified_hash_unanchored",
+  "prediction_max_abs_diff": {
+    "Ridge": 8.881784197001252e-16,
+    "LightGBM": 8.881784197001252e-16
+  },
+  "frozen_params": {
+    "n_estimators": 220,
+    "learning_rate": 0.03,
+    "num_leaves": 15,
+    "max_depth": 4,
+    "min_child_samples": 20,
+    "reg_alpha": 0.1,
+    "reg_lambda": 2.0,
+    "feature_fraction": 0.9
+  },
+  "random_settings": {
+    "random_state": 7,
+    "bagging_seed": 7,
+    "feature_fraction_seed": 7,
+    "data_random_seed": 7,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "source": "inherited_from_q1-revision-v2"
+}

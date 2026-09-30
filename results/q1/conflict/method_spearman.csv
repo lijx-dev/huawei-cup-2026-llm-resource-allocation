@@ -1,0 +1,4 @@
+,C_weighted_hierarchical,C_equal_indicator,C_semantic_group
+C_weighted_hierarchical,1.0,0.7669650873102987,0.8248136631861266
+C_equal_indicator,0.7669650873102987,1.0,0.5065148860880803
+C_semantic_group,0.8248136631861266,0.5065148860880803,1.0

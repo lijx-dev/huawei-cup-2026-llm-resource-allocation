@@ -1,0 +1,49 @@
+{
+  "experiment_version": "q2-fusion-rerun-v1",
+  "seed": 7,
+  "stage_statuses": {
+    "P0": "PASS_WITH_WARNINGS",
+    "P1": "PASS",
+    "P2": "PASS_WITH_WARNINGS",
+    "P3": "PASS_WITH_WARNINGS",
+    "P4": "PASS_WITH_WARNINGS",
+    "P5": "PASS_WITH_WARNINGS",
+    "P6": "PASS_WITH_WARNINGS",
+    "P7": "PASS_WITH_WARNINGS",
+    "P8": "PASS_WITH_WARNINGS"
+  },
+  "input_sha256": {
+    "data/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "data/real_attachments/B_scaling_laws/cerebras_training_log.csv": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+    "data/real_attachments/B_scaling_laws/scaling_baseline.csv": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+    "data/real_attachments/B_scaling_laws/published_scaling_data.csv": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "data/real_attachments/B_scaling_laws/supplementary_large_models.csv": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+    "data/real_attachments/B_scaling_laws/supplementary_large_baseline.csv": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+    "data/real_attachments/B_scaling_laws/open_model_family_metadata.csv": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064",
+    "data/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed"
+  },
+  "config_sha256": "07a646cfd39da0a60f6f4631b22c5c2fd3038255ffe87296615a09aad4f19fa6",
+  "q1_model_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33",
+  "product_metadata": {
+    "P0": "results/q2_fusion_rerun_v1/audit/p0_metadata.json",
+    "P1": "results/q2_fusion_rerun_v1/b1_baseline/p1_metadata.json",
+    "P2": "results/q2_fusion_rerun_v1/transfer_validation/p2_metadata.json",
+    "P3": "results/q2_fusion_rerun_v1/quality_model/p3_metadata.json",
+    "P4": "results/q2_fusion_rerun_v1/q1_interface/p4_metadata.json",
+    "P5": "results/q2_fusion_rerun_v1/generalized_law/p5_metadata.json",
+    "P6": "results/q2_fusion_rerun_v1/compute_opt/p6_metadata.json",
+    "P7": "results/q2_fusion_rerun_v1/extrapolation/p7_metadata.json"
+  },
+  "figure_count": 4
+}

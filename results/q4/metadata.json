@@ -1,0 +1,144 @@
+{
+  "version": "q4-latest-20260926-v1",
+  "latest": true,
+  "status": "PASS_WITH_WARNINGS",
+  "supersedes": "results/q4 and 团队交付包_问题四融合方案.zip",
+  "upstream": {
+    "q1": "q1-to-q2-v1",
+    "q2": "q2-fusion-rerun-v1",
+    "q3": "q3-latest-20260926-v1"
+  },
+  "script_status": {
+    "q4_evidence.py": 0,
+    "q4_extra_probe.py": 0,
+    "q4_c8_p90.py": 0,
+    "q4_caliber2.py": 0,
+    "q4_gN_trace.py": 0,
+    "q4_closure.py": 0,
+    "q4_closure2.py": 0,
+    "q4_ref_repro.py": 0,
+    "q4_legs.py": 0,
+    "q4_legs_reweight.py": 0,
+    "q4_bounded_forecast.py": 0,
+    "q4_p1_chinchilla_rho.py": 0,
+    "q4_p1b_dynamics.py": 0,
+    "q4_p1c_schaeffer.py": 0,
+    "q4_p1d_channels.py": 0,
+    "q4_p1e_musr_check.py": 0,
+    "q4_p2a_cluster.py": 0,
+    "q4_p2b_eligibility.py": 0,
+    "q4_p2c_backtest.py": 0,
+    "_q4_c1c8_probe.py": 0
+  },
+  "scripts_success": 20,
+  "scripts_total": 20,
+  "data_audit": {
+    "manifest_size_mismatches": 0,
+    "c8": {
+      "directories": 1863,
+      "json_files": 1958,
+      "multiple_json_directories": 95,
+      "physical_invalid_count": 4,
+      "physical_invalid": [
+        {
+          "path": "C_efficiency_evolution/detailed_results/DreadPoor_Winter_Dawn-8B-TIES/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        },
+        {
+          "path": "C_efficiency_evolution/detailed_results/FINGU-AI_Chocolatine-Fusion-14B/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        },
+        {
+          "path": "C_efficiency_evolution/detailed_results/Intel_neural-chat-7b-v3-3/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        },
+        {
+          "path": "C_efficiency_evolution/detailed_results/L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        }
+      ],
+      "selected_rule": "文件名排序后首份 JSON；若该文件不可解析，则隔离该目录",
+      "selected_valid_count": 1860,
+      "selected_invalid_count": 3,
+      "selected_invalid": [
+        {
+          "directory": "FINGU-AI_Chocolatine-Fusion-14B",
+          "path": "C_efficiency_evolution/detailed_results/FINGU-AI_Chocolatine-Fusion-14B/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        },
+        {
+          "directory": "Intel_neural-chat-7b-v3-3",
+          "path": "C_efficiency_evolution/detailed_results/Intel_neural-chat-7b-v3-3/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        },
+        {
+          "directory": "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1",
+          "path": "C_efficiency_evolution/detailed_results/L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1/results_2025-02-13T18-27-04.338360.json",
+          "error": "JSONDecodeError"
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "results/q1_revision_v2_1/q2_interface/manifest.json": "17ce0ba73837c3d33440e60888645740224710be167e68cec1f564ec898ae51c",
+    "results/q2_fusion_rerun_v1/report/reproducibility_summary.json": "f061135fe8c3c217ac3cea63a819583d9baf0117b6ab42987c2b037f0884f0c0",
+    "results/q3_latest_20260926/metadata.json": "be03530345503164450d37880ccfc8b9800b64902072e2ef777ecb232d45d43d",
+    "团队交付包_问题四融合方案.zip": "72eb25ed3c643b71459a56bf4cd2900cf0e6be121deb324d282ca10a8f3ef367"
+  },
+  "product_sha256": {
+    "results/q4_latest_20260926/reproduction/outputs/q4_c8_p90_results.json": "72732023f95e888dc74df5f49df29a46f9909f4dbb68c98d6878fe24a58a300f",
+    "results/q4_latest_20260926/reproduction/outputs/q4_evidence_results.json": "55be60f8347d4a630b3444d073ff06f4992671b2e8d4911466c2e6bd8d7aaa1a",
+    "results/q4_latest_20260926/reproduction/outputs/q4_extra_results.json": "3d4c5c3f847cd33337c3bab2a839550a600b12a1a00e5206a4e0aa44c99567ab",
+    "results/q4_latest_20260926/reproduction/outputs/q4_forecast_results.json": "0c73eab786943367d0dc22804ae2052963750a976eaf14ccba80a104450de97c",
+    "results/q4_latest_20260926/reproduction/outputs/q4_legs_results.json": "16e05b8d60c88c1e480d44623c61bae51fa6d1ec4c83369575f1faa8f63a85fc",
+    "results/q4_latest_20260926/reproduction/outputs/q4_legs_reweight_results.json": "c242ba33fa0d07aea912cbe2d43bd044721f4ac76443126acf2c5da640435d44",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1_chinchilla_rho_all.csv": "0b62fd0e2e72a2e6f5b43bd0421719f7bb189c5565ed2e4ebb1a605575b240c2",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1_chinchilla_rho_results.json": "eefa663207f33815f87bd0663ccef80384272373529a85cdad93d01f4d3ac506",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1b_dynamics_channels.csv": "a7afd56e1dedacf6b963c57a68b23e9f06536df74677903ba4b615b3ed6521b1",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1b_dynamics_results.json": "7a333dadbf37e12ceaa2b5ef97d50206ebbe393d641238c319b814956562dc2e",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1c_leavefamily.csv": "4ea3229896c5bf9d1d8efdb210d91d18ad7145068b7cb3c835b4937351f879d1",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1c_schaeffer_results.json": "5bb6445a480bcb71054edfdef4b15447fac7f9de5a61ae313c710dc6dffd55b4",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1c_schaeffer_tasks.csv": "0db0ec7f035a61e3fcefb4801deff8aaa1be1f996ce7f7da3f73d88497aadd57",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1d_channels_results.json": "2999f5df1fbfddcb4df36abe68859a50b4c84e2f6e8176a2fdb044938ad32177",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1d_post_training_pairs.csv": "3d665d15072a93f64b301cc12022d866d6b82d104ba1fd9bc42d30298adb00d5",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1e_family.csv": "569a5d7b5f527d251e49699a19b73c2bd26c9835a2a417894787fe83e8f4da3c",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1e_musr_results.json": "1867eee6e4c611d043ddb71ce546ff320d8a918a7d87f5af86da7d4df0822665",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p1e_spec_curve.csv": "f752fd7a4a23309ab1cb27fecc531babaf5fcee19200f09a4093c9ba7f824a32",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2a_cluster_results.json": "fa0847c9ff4f1d7ef1e51e84e78470828236e8e1ccdb914ec9574a8097ef14f9",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2a_clusters.csv": "ec2a0a1131de025f3e15bd3cf47c42c76d24364fb3dbbc5bb904c32c3f4038c9",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2b_eligibility_results.json": "98fde2e9c1dc6d91230e1b40f6284230ee9885533124068eece8ca1d62da11da",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2b_funnel.csv": "66912a3205a1a59e435f035b8708406f10bba51c93b8cf99944a458fd45c70b9",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2b_gates.csv": "47947d6362bd778982868e8649e41eed3eb500ab61c88ca50bbc2a26e4184cfd",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2c_backtest_results.json": "661d1b18e335b33e064aec8341eddd70baa40e242153924433b8983993572471",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2c_backtest_table.csv": "6858202daa15cc99f6a663626df00a5afb2c8d13bd7f9772c2d33ced902f1eb3",
+    "results/q4_latest_20260926/reproduction/outputs/q4_p2c_calibration.json": "b3c37892c5123db0040d2740765e41d13372b94527fd7f5d4cf200f6370dbe80",
+    "results/q4_latest_20260926/upstream_integration.json": "527305bd14727ace92b241c5a1f53fc725fe974a1c0fc80130bb4e7943c85836",
+    "results/q4_latest_20260926/reproduction/data_audit.json": "cbebb94bb3f0a758b5e0fecd2331b517a1b43d9fa27f6a9fb1a945150c63ac9f",
+    "results/q4_latest_20260926/reproduction/input_inventory.json": "a59d522fc99e5d87862c16358e12ff7bdf1d9b627b687de9aa5bd464bc12a806",
+    "results/q4_latest_20260926/reproduction/execution_status.json": "d7b79abba4183e9d68534b44e42fa951d6f89ba912fe82a1177c70142fd67279"
+  },
+  "counts": {
+    "q3_grid": 135,
+    "q3_feasible": 123,
+    "q4_machine_outputs": 26,
+    "c_only_unchanged": 1,
+    "c_only_checked": 7
+  },
+  "comparisons": {
+    "forecast_changed_with_q3_mechanism": true,
+    "c_only_outputs_unchanged": {
+      "q4_c8_p90_results.json": false,
+      "q4_extra_results.json": false,
+      "q4_p1_chinchilla_rho_results.json": false,
+      "q4_p1c_schaeffer_results.json": false,
+      "q4_p1e_musr_results.json": false,
+      "q4_p2a_cluster_results.json": false,
+      "q4_p2b_eligibility_results.json": true
+    }
+  },
+  "warnings": [
+    "C6 Loss-Benchmark bridge remains weak and cross-source",
+    "Q3 quality cost and lambda_p remain scenarios",
+    "12/24 month forecasts lack matching-horizon prospective validation"
+  ]
+}

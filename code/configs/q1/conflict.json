@@ -1,0 +1,44 @@
+{
+  "model_version": "q1-p2-v1",
+  "required_quality_model_version": "q1-p1-v1",
+  "distance": "one_minus_spearman",
+  "linkage": "average",
+  "candidate_k": [2, 3, 4, 5, 6, 7, 8],
+  "selected_k": 5,
+  "selection_reason": "K=2 虽有最高 silhouette，但把 16 项混为一簇；K=5 的 average/complete 成员完全一致，分离重复度、内容价值、文本形式和广告信号。ad_en 单指标簇保留其明确的广告语义。维度名称是人工解释，不代表已证实的潜变量。",
+  "expected_clusters": [
+    {
+      "dimension": "G1",
+      "label": "参考语料相似度与词汇特征",
+      "indicators": ["dsir_books", "dsir_wiki", "dsir_math", "rps_doc_frac_unique_words", "rps_lines_numerical_chars_fraction"]
+    },
+    {
+      "dimension": "G2",
+      "label": "广告缺失信号",
+      "indicators": ["ad_en"]
+    },
+    {
+      "dimension": "G3",
+      "label": "重复度控制",
+      "indicators": ["rps_doc_frac_chars_top_2gram", "rps_doc_frac_chars_top_3gram"]
+    },
+    {
+      "dimension": "G4",
+      "label": "内容规模与知识价值",
+      "indicators": ["rps_doc_word_count", "rps_doc_num_sentences", "rps_doc_unigram_entropy", "fineweb_edu", "modernbert_reasoning", "modernbert_professionalism", "qurater"]
+    },
+    {
+      "dimension": "G5",
+      "label": "文本形式与流畅性",
+      "indicators": ["rps_doc_frac_no_alph_words", "rps_lines_uppercase_letter_fraction", "rps_lines_ending_with_terminal_punctution_mark", "rps_doc_mean_word_length", "fluency_en", "modernbert_cleanliness", "modernbert_readability"]
+    }
+  ],
+  "threshold_quantiles": [0.85, 0.90, 0.95],
+  "primary_threshold_quantile": 0.90,
+  "high_conflict_rule": "strictly_greater_than_threshold",
+  "bootstrap_repetitions": 1000,
+  "bootstrap_seed": 20260923,
+  "chunk_size": 4096,
+  "example_count_per_quadrant": 3,
+  "quality_split": "A1_median_Q"
+}

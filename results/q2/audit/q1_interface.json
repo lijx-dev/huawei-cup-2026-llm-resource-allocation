@@ -1,0 +1,99 @@
+{
+  "model_exists": true,
+  "model_path": "results/q1_revision_v2/mixture/fitted_models.joblib",
+  "model_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33",
+  "reference_exists": true,
+  "final_report_exists": true,
+  "inherited_reference": {
+    "model_file_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33",
+    "model_hash_anchor_in_v2_metadata": false,
+    "verification_status": "prediction_verified_hash_unanchored",
+    "prediction_max_abs_diff": {
+      "Ridge": 8.881784197001252e-16,
+      "LightGBM": 8.881784197001252e-16
+    },
+    "frozen_params": {
+      "n_estimators": 220,
+      "learning_rate": 0.03,
+      "num_leaves": 15,
+      "max_depth": 4,
+      "min_child_samples": 20,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0,
+      "feature_fraction": 0.9
+    },
+    "random_settings": {
+      "random_state": 7,
+      "bagging_seed": 7,
+      "feature_fraction_seed": 7,
+      "data_random_seed": 7,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "source": "inherited_from_q1-revision-v2"
+  },
+  "model_bundle_keys": [
+    "models",
+    "selection",
+    "mix_fields",
+    "loss_fields",
+    "seed"
+  ],
+  "input_fields": [
+    "train_the_pile_arxiv",
+    "train_the_pile_freelaw",
+    "train_the_pile_nih_exporter",
+    "train_the_pile_pubmed_central",
+    "train_the_pile_wikipedia_en",
+    "train_the_pile_dm_mathematics",
+    "train_the_pile_github",
+    "train_the_pile_philpapers",
+    "train_the_pile_stackexchange",
+    "train_the_pile_enron_emails",
+    "train_the_pile_gutenberg_pg_19",
+    "train_the_pile_pile_cc",
+    "train_the_pile_ubuntu_irc",
+    "train_the_pile_europarl",
+    "train_the_pile_hackernews",
+    "train_the_pile_pubmed_abstracts",
+    "train_the_pile_uspto_backgrounds"
+  ],
+  "output_fields": [
+    "metric/the_pile_arxiv_val_loss",
+    "metric/the_pile_freelaw_val_loss",
+    "metric/the_pile_pubmed_central_val_loss",
+    "metric/the_pile_wikipedia_en_val_loss",
+    "metric/the_pile_dm_mathematics_val_loss",
+    "metric/the_pile_github_val_loss",
+    "metric/the_pile_stackexchange_val_loss",
+    "metric/the_pile_gutenberg_pg_19_val_loss",
+    "metric/the_pile_pile_cc_val_loss",
+    "metric/the_pile_ubuntu_irc_val_loss",
+    "metric/the_pile_hackernews_val_loss",
+    "metric/the_pile_pubmed_abstracts_val_loss",
+    "metric/the_pile_uspto_backgrounds_val_loss"
+  ],
+  "input_count": 17,
+  "output_count": 13,
+  "model_version": "q1-revision-v2; rechecked in q1-revision-v2.1",
+  "reference_mixture_source": "A4 train_mixture_1m.csv",
+  "c4_status": "excluded_from_formal_quality_mapping_per_q2_agents",
+  "qmapped_role": "sensitivity_only",
+  "historical_hash_anchored": false,
+  "input_order_matches_A4": true,
+  "output_order_matches_A5": true,
+  "model_hash_matches_v2_1_reference": true,
+  "A4_training_mixture_exists": true,
+  "A4_training_mixture_sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8",
+  "ready_for_h_v": true,
+  "q_mapping_policy": "Q_A and Q_B remain distinct; no empirical conversion is claimed",
+  "formal_interface_path": "results/q1_revision_v2_1/q2_interface/manifest.json",
+  "formal_interface_sha256": "17ce0ba73837c3d33440e60888645740224710be167e68cec1f564ec898ae51c",
+  "formal_interface_status": "PASS",
+  "support_rule_path": "results/q1_revision_v2/mixture/support_reference.json",
+  "support_rule_sha256": "abcc6347868aef1b24e734eaf1e713fdd197184a3e5832432e2d886c9607d35f",
+  "support_rule": {
+    "nearest_neighbor_95pct_distance": 0.2600350740397794,
+    "reference": "training recipe leave-one-out Euclidean distance"
+  }
+}

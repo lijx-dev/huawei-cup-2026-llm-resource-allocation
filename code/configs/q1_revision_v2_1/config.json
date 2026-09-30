@@ -1,0 +1,29 @@
+{
+  "experiment_version": "q1-revision-v2.1",
+  "seed": 7,
+  "groups": {
+    "A_model_ratings": ["fineweb_edu", "fluency_en", "modernbert_cleanliness", "modernbert_readability", "modernbert_reasoning", "modernbert_professionalism", "qurater", "ad_en"],
+    "B_dsir": ["dsir_books", "dsir_wiki", "dsir_math"],
+    "C_language_structure": ["rps_doc_word_count", "rps_doc_num_sentences", "rps_doc_unigram_entropy", "rps_doc_frac_unique_words", "rps_doc_frac_no_alph_words", "rps_doc_frac_chars_top_2gram", "rps_doc_frac_chars_top_3gram", "rps_lines_uppercase_letter_fraction", "rps_lines_ending_with_terminal_punctution_mark", "rps_lines_numerical_chars_fraction", "rps_doc_mean_word_length"]
+  },
+  "direction_provisional": ["rps_doc_word_count", "rps_doc_num_sentences", "rps_lines_numerical_chars_fraction", "rps_doc_mean_word_length"],
+  "bootstrap_repetitions": 500,
+  "top_fractions": [0.01, 0.05],
+  "disagreement_quantiles": [0.85, 0.90, 0.95],
+  "cluster_candidate_k": [2, 3, 4, 5, 6, 7],
+  "cluster_linkages": ["average", "complete", "single"],
+  "cluster_primary_k": 5,
+  "cluster_primary_linkage": "average",
+  "recipe_kmeans_clusters": 10,
+  "recipe_kmeans_n_init": 20,
+  "recipe_group_cv_folds": 5,
+  "q_cv_folds": 5,
+  "q_ridge_alphas": [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0],
+  "coverage_thresholds": [0.2, 0.4, 0.6],
+  "coverage_min_train": 50,
+  "coverage_min_test": 20,
+  "placebo_repetitions": 1000,
+  "chunk_size": 8192,
+  "v2_result_dir": "results/q1_revision_v2",
+  "result_dir": "results/q1_revision_v2_1"
+}

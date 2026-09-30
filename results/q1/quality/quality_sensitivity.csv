@@ -1,0 +1,8 @@
+domain,main_rank,drop4_rank,rank_shift
+stackexchange,1,3,2
+arxiv,2,5,3
+commoncrawl,3,2,-1
+c4,4,1,-3
+wikipedia,5,4,-1
+github,6,6,0
+book,7,7,0

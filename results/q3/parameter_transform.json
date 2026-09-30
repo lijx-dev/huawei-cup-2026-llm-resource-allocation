@@ -1,0 +1,24 @@
+{
+  "source_formula": "E+A*N^-alpha+B*D^-beta*exp(gamma*(q0-Q))",
+  "optimization_formula": "E+A*N^-alpha+B_eff*D^-beta*exp(-rho_D*Q)",
+  "source_parameters": {
+    "E": 0.9090455652118836,
+    "A": 0.5401730600646597,
+    "B": 1.7945412662005678,
+    "alpha": 0.2790538928706502,
+    "beta": 0.09959767121362291,
+    "gamma": 0.31789307006995426,
+    "q0": 0.5
+  },
+  "equivalent_parameters": {
+    "E": 0.9090455652118836,
+    "A": 0.5401730600646597,
+    "alpha": 0.2790538928706502,
+    "B": 2.1036963461930567,
+    "beta": 0.09959767121362291,
+    "rho_N": 0.0,
+    "rho_D": 0.31789307006995426,
+    "E1": 0.0
+  },
+  "max_abs_probe_error": 0.0
+}

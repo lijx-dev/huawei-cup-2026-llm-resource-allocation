@@ -1,0 +1,7 @@
+method,spearman_vs_hierarchical,top_1pct_overlap,top_5pct_overlap,domain_ranking
+Q_hierarchical_balanced,1.0,1.0,1.0,stackexchange>arxiv>commoncrawl>c4>wikipedia>github>book
+Q_hierarchical_drop4,0.8693183136449997,0.1535810034469552,0.4543783038381981,c4>commoncrawl>stackexchange>wikipedia>arxiv>github>book
+Q_hierarchical_equal_within,0.9129793965825396,0.44006127920337035,0.7584463341760515,commoncrawl>stackexchange>c4>arxiv>wikipedia>github>book
+Q_entropy_redundancy,0.8653345282091626,0.46380697050938335,0.5615567302535815,arxiv>book>commoncrawl>stackexchange>c4>wikipedia>github
+Q_group_equal,0.9129793965825396,0.44006127920337035,0.7584463341760515,commoncrawl>stackexchange>c4>arxiv>wikipedia>github>book
+Q_TOPSIS,0.7680995123187553,0.4339333588663347,0.40818202712020224,arxiv>book>stackexchange>commoncrawl>wikipedia>c4>github

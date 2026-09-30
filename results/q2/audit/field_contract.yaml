@@ -1,0 +1,182 @@
+{
+  "experiment_version": "q2-fusion-rerun-v1",
+  "stage": "Q2-P0",
+  "seed": 7,
+  "standard_fields": {
+    "N_params_raw": "source N_params_B",
+    "N_billions": "N_params_B (already billions)",
+    "D_tokens_raw": "source D_tokens_B",
+    "D_billions": "D_tokens_B (already billions)",
+    "val_loss": "source val_loss, no cross-source calibration",
+    "model_family": "source family or metadata mapping, no automatic inference",
+    "model_scale": "source N_params_B or model_size; not interchangeable without mapping",
+    "checkpoint": "B1 steps/B3 step/B12 step; semantics differ",
+    "experiment_id": "source experiment_id; B1 run_id is row identifier",
+    "data_role": "dataset_role_matrix.csv",
+    "provenance_type": "dataset_role_matrix.csv",
+    "validation_role": "dataset_role_matrix.csv",
+    "Q_B_raw": "source Q_score",
+    "Q_B_normalized": "identity only for source Q_score within [0,1]; semantic equivalence unconfirmed",
+    "Q_B_direction": "uncertain; no automatic flip",
+    "provenance": "dataset_role_matrix.csv"
+  },
+  "units": {
+    "B1": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B2": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B3": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B4": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B5": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B6": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B7": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B8": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B9": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B10": {
+      "N_original_unit": "billions of parameters",
+      "D_original_unit": "billions of tokens",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B11": {
+      "N_original_unit": "not_applicable",
+      "D_original_unit": "not_applicable",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    },
+    "B12": {
+      "N_original_unit": "not_applicable",
+      "D_original_unit": "not_applicable",
+      "unit_evidence": "docs/数据说明.pdf p.5; N_params_B/D_tokens_B convention",
+      "conversion_rule": "identity for *_B; multiply by 1e9 only if raw counts required"
+    }
+  },
+  "attachments": {
+    "B1": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_scale": "N_params_B",
+      "checkpoint": "steps",
+      "experiment_id": "run_id"
+    },
+    "B2": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_scale": "N_params_B",
+      "checkpoint": "steps",
+      "experiment_id": "run_id"
+    },
+    "B3": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_scale": "N_params_B",
+      "checkpoint": "step"
+    },
+    "B4": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_family": "family"
+    },
+    "B5": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_family": "family"
+    },
+    "B6": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "Q": "Q_score",
+      "loss": "val_loss",
+      "experiment_id": "experiment_id"
+    },
+    "B7": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "Q": "Q_score",
+      "loss": "val_loss",
+      "experiment_id": "experiment_id"
+    },
+    "B8": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "Q": "Q_score",
+      "loss": "val_loss",
+      "experiment_id": "experiment_id",
+      "data_type": "data_type"
+    },
+    "B9": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "model_name": "model_name"
+    },
+    "B10": {
+      "N": "N_params_B",
+      "D": "D_tokens_B",
+      "loss": "val_loss",
+      "model_name": "family"
+    },
+    "B11": {
+      "model_family": "family",
+      "model_repo": "model_repo"
+    },
+    "B12": {
+      "model_repo": "model_repo",
+      "model_scale": "model_size",
+      "checkpoint": "step"
+    }
+  },
+  "unresolved": [
+    "B12 exact model_size to N_params_B mapping",
+    "B3 step versus B1/B12 step semantics",
+    "Q_score operational direction and B8 equivalence",
+    "cross-source Loss evaluation protocol"
+  ]
+}

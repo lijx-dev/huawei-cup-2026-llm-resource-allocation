@@ -1,0 +1,13 @@
+attachment,provenance,model_role,validation_role,can_fit,can_tune,can_validate,can_test_direction,can_extrapolate_reference,leakage_risk,notes
+B1,reported_observation,classic_scaling_fit,none,True,False,False,False,False,shared_trajectory,role is restricted to provenance and available columns
+B2,semi_synthetic,cross_source_validation,holdout_or_reference,False,False,True,False,False,derived_from_B1,role is restricted to provenance and available columns
+B3,interpolated,interpolated_trajectory_validation,holdout_or_reference,False,False,True,False,False,derived_from_B1,role is restricted to provenance and available columns
+B4,reported_observation,cross_family_validation,holdout_or_reference,False,False,True,False,False,source_metric_heterogeneity,role is restricted to provenance and available columns
+B5,mixed_reported_sources,literature_scale_validation,holdout_or_reference,False,False,True,False,False,source_metric_heterogeneity,role is restricted to provenance and available columns
+B6,semi_synthetic,quality_scaling_fit,none,True,False,False,False,False,none_known,role is restricted to provenance and available columns
+B7,semi_synthetic,quality_holdout_extension,holdout_or_reference,False,False,True,False,False,overlap_with_B6,role is restricted to provenance and available columns
+B8,semi_synthetic_and_extrapolated,quality_direction_stress_test,direction_stress,False,False,False,True,False,overlap_with_B6,role is restricted to provenance and available columns
+B9,metadata_only,large_model_metadata,none,False,False,False,False,True,none_known,role is restricted to provenance and available columns
+B10,estimated_reference,estimated_large_scale_reference,none,False,False,False,False,True,derived_from_B1,role is restricted to provenance and available columns
+B11,metadata_only,model_family_metadata,none,False,False,False,False,False,none_known,role is restricted to provenance and available columns
+B12,metadata_only,checkpoint_metadata,none,False,False,False,False,False,shared_trajectory,role is restricted to provenance and available columns

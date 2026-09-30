@@ -1,0 +1,59 @@
+{
+  "funnel": [
+    {
+      "stage": "W 候选（Epoch 开放权重=Yes）",
+      "n": 424,
+      "lost": 0,
+      "reason": "起点"
+    },
+    {
+      "stage": "有同名修订号线索",
+      "n": 207,
+      "lost": 217,
+      "reason": "无详细评测 JSON / 同名多份"
+    },
+    {
+      "stage": "BBH 归一化后匹配",
+      "n": 198,
+      "lost": 9,
+      "reason": "跨代际评测协议差异"
+    },
+    {
+      "stage": "五项非 MATH 全匹配",
+      "n": 194,
+      "lost": 4,
+      "reason": "其他任务仍不匹配"
+    },
+    {
+      "stage": "六项全匹配（优先名单）",
+      "n": 56,
+      "lost": 138,
+      "reason": "仅 MATH 不匹配（评分器/快照）"
+    }
+  ],
+  "n_six": 56,
+  "license_tier_all424": {
+    "commercial_ok": 242,
+    "unknown": 166,
+    "commercial_conditional": 16
+  },
+  "license_tier_priority": {
+    "commercial_ok": 37,
+    "unknown": 21
+  },
+  "license_upper_bound": {
+    "all424_research": 258,
+    "all424_commercial_strict": 242,
+    "priority_research": 37,
+    "priority_commercial_strict": 37
+  },
+  "confirmed_R": 0,
+  "confirmed_R_plus": 0,
+  "deep_audit": {
+    "n": 2,
+    "link_ok": 0,
+    "R_ok": 0,
+    "blocked_gate": "C2 与原始评测分属不同 leaderboard 代际 → 分数无法归属固定 revision"
+  },
+  "binding_constraint": "g2 权重哈希 + g3 固定版本许可文本 + g4 harness 可追溯性，均未取证"
+}

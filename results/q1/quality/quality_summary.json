@@ -1,0 +1,13 @@
+{
+  "experiment_version": "q1-revision-v2.1",
+  "seed": 7,
+  "valid_unique": 261056,
+  "accepted_source_rows": 272475,
+  "new_matrix_vs_v2_max_abs_diff": 0.0,
+  "main_method": "Q_hierarchical_balanced",
+  "fallbacks": [],
+  "drop4_fallbacks": [],
+  "max_global_weight": 0.15737368910185515,
+  "numerical_chars_weight_v2_1": 0.13597552243665187,
+  "numerical_chars_weight_v2": 0.2519605036398889
+}

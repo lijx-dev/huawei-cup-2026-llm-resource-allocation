@@ -1,0 +1,39 @@
+{
+  "C": 1e+22,
+  "Lctx": 32768,
+  "eta": 0.0002,
+  "cost_type": "exp",
+  "definition": "d log(total Loss*) / d log(C)",
+  "epsilon_C": -0.043348967524087234,
+  "finite_difference_log_step": 0.01,
+  "low": {
+    "N": 6.279016215132175,
+    "D": 119.77709847360877,
+    "Q": 1.0,
+    "L": 2.1829839707293495,
+    "budget_used_fraction": 1.0,
+    "idle_fraction": 0.0,
+    "s_train": 0.45578453803840435,
+    "s_attention": 0.49783825808141446,
+    "s_quality": 0.046377203880181087,
+    "dominant_cost": "attention",
+    "N_status": "interior",
+    "D_status": "interior",
+    "Q_status": "max"
+  },
+  "high": {
+    "N": 6.308585599200608,
+    "D": 121.65044404489485,
+    "Q": 1.0,
+    "L": 2.1810921888906862,
+    "budget_used_fraction": 1.0,
+    "idle_fraction": 0.0,
+    "s_train": 0.4558836369405987,
+    "s_attention": 0.4979465005089846,
+    "s_quality": 0.046169862550416746,
+    "dominant_cost": "attention",
+    "N_status": "interior",
+    "D_status": "interior",
+    "Q_status": "max"
+  }
+}

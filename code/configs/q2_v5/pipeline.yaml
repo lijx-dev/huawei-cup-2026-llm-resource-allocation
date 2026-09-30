@@ -1,0 +1,16 @@
+{
+  "version": "q2_v5",
+  "seed": 7,
+  "b1_bootstrap_resamples": 120,
+  "quality_bootstrap_resamples": 100,
+  "validation_bootstrap_resamples": 500,
+  "model_selection": {
+    "primary_metric": "grouped_oof_rmse",
+    "one_standard_error_rule": true,
+    "eligibility": "finite_predictions_and_converged_full_fit",
+    "tie_break": "fewest_parameters_then_lexicographic_name",
+    "fixed_before_b7_loss_access": true
+  },
+  "lambda_scenarios": [0.0, 0.5, 1.0, 1.5],
+  "mixture_primary_form_if_unidentified": "A"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "q1-m3-v1",
+  "seed": 20260923,
+  "sum_tolerance": 0.008500001,
+  "cv_folds": 3,
+  "ridge_alphas": [0.0001, 0.001, 0.01, 0.1, 1.0],
+  "ridge_reference_domain": "uspto_backgrounds",
+  "lightgbm_candidates": [
+    {"n_estimators": 120, "learning_rate": 0.05, "num_leaves": 7, "max_depth": 3, "min_child_samples": 15, "reg_alpha": 0.0, "reg_lambda": 1.0, "feature_fraction": 0.9},
+    {"n_estimators": 220, "learning_rate": 0.03, "num_leaves": 15, "max_depth": 4, "min_child_samples": 20, "reg_alpha": 0.1, "reg_lambda": 2.0, "feature_fraction": 0.9},
+    {"n_estimators": 100, "learning_rate": 0.05, "num_leaves": 7, "max_depth": 3, "min_child_samples": 30, "reg_alpha": 0.1, "reg_lambda": 5.0, "feature_fraction": 0.8}
+  ],
+  "perturbations": [0.01, 0.03, 0.05],
+  "interaction_delta": 0.03,
+  "support_quantile": 0.95,
+  "support_rule": "nearest_neighbor_q95_and_each_share_le_training_max",
+  "support_far_multiplier": 2.0,
+  "top_k": [5, 10, 20]
+}

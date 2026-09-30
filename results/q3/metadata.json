@@ -1,0 +1,45 @@
+{
+  "version": "q3-latest-20260926-v1",
+  "latest": true,
+  "status": "PASS_WITH_WARNINGS",
+  "seed": 20260926,
+  "upstream": {
+    "q2": "q2-fusion-rerun-v1",
+    "q1_interface": "q1-to-q2-v1"
+  },
+  "source_sha256": {
+    "results/q2_fusion_rerun_v1/quality_model/b6_parameters.json": "d92105c20f2b4836547dcc4e4096514aca34c34f3b3a5cc9905ad2be4ead697c",
+    "results/q2_fusion_rerun_v1/quality_model/b6_bootstrap_parameters.csv": "65dcb9656b63fdaf26d04476ebfbccaf00b6836b85383c08c04f613dfefedba2",
+    "results/q1_revision_v2_1/q2_interface/manifest.json": "17ce0ba73837c3d33440e60888645740224710be167e68cec1f564ec898ae51c",
+    "results/q1_revision_v2_1/q2_interface/mixture_response.csv.gz": "eb1d1493b0a885cf71092cf9976e35e9f81cd9c6c90d6f38eea2800d3f76cce0"
+  },
+  "product_sha256": {
+    "results/q3_latest_20260926/parameter_transform.json": "5ea38a7e8e753392ba87cfe86fb8849819edb635d0b0e1d50defddacef6782fb",
+    "results/q3_latest_20260926/scenario_grid_all.csv": "87336a343fb35f0f1c93221dfb092621aa8e32c64bd3f9ac9ed42dc07758ae71",
+    "results/q3_latest_20260926/scenario_grid_main.csv": "0aa4a8ca1962c5f7846611d18327fb6ce71a81ead563a7fa7fc5f5633b4c8b32",
+    "results/q3_latest_20260926/mechanism_elasticity.json": "37fef47bc57a142538dc1611ef74326f77f7f49f90cf9daa1421ad7eb4888c8d",
+    "results/q3_latest_20260926/mixture_scenarios.csv": "6c0e6c9a257d35d1a3ce686b9ba5481f4a6c54ef75ed7eb99eb80185c91fc251",
+    "results/q3_latest_20260926/bootstrap_optima.csv": "5eb90968677612b89fdbd102b176008fdfe162a75d4b9cae21eef766ce9463aa",
+    "results/q3_latest_20260926/kkt_local_verification.csv": "33caa27b98e5fc705207613221c52871a26684e1828d692657fc72797062f62a"
+  },
+  "counts": {
+    "grid": 135,
+    "feasible": 123,
+    "infeasible": 12,
+    "mixture_recipes": 1215,
+    "bootstrap_success": 60,
+    "kkt_checks": 9
+  },
+  "checks": {
+    "formal_q1_interface": true,
+    "parameter_transform_max_abs_error": 0.0,
+    "kkt_local_pass": true,
+    "mechanism_epsilon_finite": true
+  },
+  "assumptions": {
+    "quality_cost": "three uncalibrated scenarios",
+    "eta": "scenario",
+    "lambda_p": "scenario_not_identified",
+    "mixture_optimization": "discrete formal-interface candidates; not global causal optimum"
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "schema_version": "q1-p1-v1",
+  "status": "fully_specified_model_assumptions",
+  "evidence": {
+    "contest": "docs/数据说明.pdf：附件 A 的 22 项字段及 14+8 类型；赛题正文要求统一正向",
+    "audit": "results/q1/audit/quality_indicator_schema.csv：实际类型、范围、列表长度",
+    "source_card": "https://huggingface.co/datasets/opendatalab/SlimPajama-Meta-rater/blob/main/README.md",
+    "source_paper": "https://aclanthology.org/2025.acl-long.533.pdf",
+    "design": "question1-1(1).md：提供统一列表公式、Min–Max、熵权、Spearman 修正；未提供逐指标方向和 QuRater 聚合",
+    "redpajama": "https://github.com/togethercomputer/RedPajama-Data/blob/main/README.md",
+    "gopher_rules": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2/blob/main/README.md",
+    "qurating": "https://proceedings.mlr.press/v235/wettig24a.html"
+  },
+  "indicators": [
+    {
+      "name": "dsir_books",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "相对 Books 分布的重要性对数比；不等于已证实的文本质量",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "参考 Books 语料相似度的正向代理；非独立证实的训练效果"
+    },
+    {
+      "name": "dsir_wiki",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "相对 Wikipedia 分布的重要性对数比",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "参考 Wikipedia 语料相似度的正向代理；非独立证实的训练效果"
+    },
+    {
+      "name": "dsir_math",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "相对 Math 分布的重要性对数比",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "参考 Math 语料相似度的正向代理；非独立证实的训练效果"
+    },
+    {
+      "name": "rps_doc_word_count",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "归一化后文本单词数",
+      "scalarization": "interval_desirability",
+      "direction": "positive",
+      "allowed_raw_range": [
+        0,
+        null
+      ],
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "Gopher 自然语言长度区间；区间外连续衰减，跨域适用性需敏感性分析",
+      "interval": [
+        50,
+        10000
+      ]
+    },
+    {
+      "name": "rps_doc_num_sentences",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "文本句子数",
+      "scalarization": "log1p",
+      "direction": "positive",
+      "allowed_raw_range": [
+        0,
+        null
+      ],
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "句子数作为信息量代理，log1p 表示边际递减；建模假设"
+    },
+    {
+      "name": "rps_doc_unigram_entropy",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "词频分布的信息熵",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": [
+        0,
+        null
+      ],
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "词频多样性正向代理；极端高值可能不是高质量，做方向敏感性"
+    },
+    {
+      "name": "rps_doc_frac_unique_words",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "唯一词占比；实际值呈百分数尺度",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "词汇多样性正向代理；短文本偏差由长度指标及敏感性分析提示"
+    },
+    {
+      "name": "rps_doc_frac_no_alph_words",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "无字母词占比；实际值呈百分数尺度",
+      "scalarization": "identity",
+      "direction": "negative",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "普通自然语言中非字母词较多视为噪声代理；代码/数学域可能异向"
+    },
+    {
+      "name": "rps_doc_frac_chars_top_2gram",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "最高频词二元组字符占比；少数实测值大于 100",
+      "scalarization": "identity",
+      "direction": "negative",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "高频二元组占比代表重复性；RedPajama 将其列为重复信号"
+    },
+    {
+      "name": "rps_doc_frac_chars_top_3gram",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "最高频词三元组字符占比；少数实测值大于 100",
+      "scalarization": "identity",
+      "direction": "negative",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "高频三元组占比代表重复性；RedPajama 将其列为重复信号"
+    },
+    {
+      "name": "rps_lines_uppercase_letter_fraction",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "每行大写字母比例；实际值呈百分数尺度",
+      "scalarization": "identity",
+      "direction": "negative",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "过多大写字母的普通文本风格噪声代理；代码域可能异向"
+    },
+    {
+      "name": "rps_lines_ending_with_terminal_punctution_mark",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "以终止标点结束的行比例；实际值呈百分数尺度",
+      "scalarization": "identity",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "普通文本句读完整性代理；代码域可能异向"
+    },
+    {
+      "name": "rps_lines_numerical_chars_fraction",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "数字字符比例；实际值呈百分数尺度",
+      "scalarization": "identity",
+      "direction": "negative",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "普通文本过多数值字符的噪声代理；数学域可能异向，做方向敏感性"
+    },
+    {
+      "name": "rps_doc_mean_word_length",
+      "raw_type": "scalar",
+      "expected_length": null,
+      "semantic": "归一化后平均词长",
+      "scalarization": "interval_desirability",
+      "direction": "positive",
+      "allowed_raw_range": [
+        0,
+        null
+      ],
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "Gopher 平均词长参考区间；区间外连续衰减，跨域适用性需敏感性分析",
+      "interval": [
+        3,
+        10
+      ]
+    },
+    {
+      "name": "fineweb_edu",
+      "raw_type": "list",
+      "expected_length": 1,
+      "semantic": "FineWeb-Edu 教育价值的单值列表",
+      "scalarization": "singleton",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null
+    },
+    {
+      "name": "fluency_en",
+      "raw_type": "list",
+      "expected_length": 2,
+      "semantic": "[不流畅, 流畅] 的二分类 logits",
+      "scalarization": "binary_logits_probability_index_1",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null
+    },
+    {
+      "name": "modernbert_cleanliness",
+      "raw_type": "list",
+      "expected_length": 6,
+      "semantic": "洁净度 0–5 有序等级 logits；数据卡示例使用 argmax，P1 方案拟用稳定 Softmax 期望",
+      "scalarization": "ordered_logits_expectation",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "用户文档采用期望等级；原数据卡示例使用 argmax，两种方式不同，本方案预先固定为 Softmax 期望"
+    },
+    {
+      "name": "modernbert_readability",
+      "raw_type": "list",
+      "expected_length": 6,
+      "semantic": "可读性 0–5 有序等级 logits；数据卡示例使用 argmax，P1 方案拟用稳定 Softmax 期望",
+      "scalarization": "ordered_logits_expectation",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "用户文档采用期望等级；原数据卡示例使用 argmax，两种方式不同，本方案预先固定为 Softmax 期望"
+    },
+    {
+      "name": "modernbert_reasoning",
+      "raw_type": "list",
+      "expected_length": 6,
+      "semantic": "推理性 0–5 有序等级 logits；数据卡示例使用 argmax，P1 方案拟用稳定 Softmax 期望",
+      "scalarization": "ordered_logits_expectation",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "用户文档采用期望等级；原数据卡示例使用 argmax，两种方式不同，本方案预先固定为 Softmax 期望"
+    },
+    {
+      "name": "modernbert_professionalism",
+      "raw_type": "list",
+      "expected_length": 6,
+      "semantic": "专业性 0–5 有序等级 logits；数据卡示例使用 argmax，P1 方案拟用稳定 Softmax 期望",
+      "scalarization": "ordered_logits_expectation",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "用户文档采用期望等级；原数据卡示例使用 argmax，两种方式不同，本方案预先固定为 Softmax 期望"
+    },
+    {
+      "name": "qurater",
+      "raw_type": "list",
+      "expected_length": 4,
+      "semantic": "[写作风格, 专业知识要求, 事实趣闻, 教育价值] 四个无序维度",
+      "scalarization": "list_element_index_3",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null,
+      "model_assumption": "原论文分别评四维，主方案采用论文实验表现最佳的教育价值维；四维等权作敏感性对照"
+    },
+    {
+      "name": "ad_en",
+      "raw_type": "list",
+      "expected_length": 2,
+      "semantic": "[有广告, 无广告] 的二分类 logits",
+      "scalarization": "binary_logits_probability_index_1",
+      "direction": "positive",
+      "allowed_raw_range": null,
+      "missing_policy": "reject",
+      "decision": null
+    }
+  ]
+}

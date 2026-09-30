@@ -1,0 +1,14 @@
+{
+  "model_version": "q1-p1-v1",
+  "status": "proposed_model_with_documented_assumptions",
+  "fit_source": "A1 audited unique valid records",
+  "apply_sources": ["A2", "A3"],
+  "normalization": "fixed_A1_min_max",
+  "out_of_reference": "clip_with_count",
+  "constant_indicator": "block_full_22_indicator_model",
+  "invalid_record": "exclude_with_reason",
+  "domain_ci_method": "normal_approximation_95pct",
+  "qu_rater_primary": "educational_value_index_3",
+  "qu_rater_sensitivity": "equal_mean_four_dimensions",
+  "topsis_comparison": true
+}

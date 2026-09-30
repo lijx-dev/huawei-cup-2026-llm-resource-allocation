@@ -1,0 +1,5 @@
+attachment,source_file,csv_line,record_id,status,reason_code,column,raw_value,rule_version
+B9,data/real_attachments/B_scaling_laws/supplementary_large_models.csv,10,,numeric_invalid,invalid_D,D_tokens_B,0.0,q2-fusion-rerun-v1-p0-1
+B9,data/real_attachments/B_scaling_laws/supplementary_large_models.csv,43,,numeric_invalid,invalid_D,D_tokens_B,0.0,q2-fusion-rerun-v1-p0-1
+B9,data/real_attachments/B_scaling_laws/supplementary_large_models.csv,76,,numeric_invalid,invalid_D,D_tokens_B,0.0,q2-fusion-rerun-v1-p0-1
+B9,data/real_attachments/B_scaling_laws/supplementary_large_models.csv,97,,numeric_invalid,invalid_D,D_tokens_B,0.0,q2-fusion-rerun-v1-p0-1

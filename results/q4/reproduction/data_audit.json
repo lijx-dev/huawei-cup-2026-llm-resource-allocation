@@ -1,0 +1,48 @@
+{
+  "source_manifest_BC_files": 35,
+  "source_manifest_size_mismatches": [],
+  "c8": {
+    "directories": 1863,
+    "json_files": 1958,
+    "multiple_json_directories": 95,
+    "physical_invalid_count": 4,
+    "physical_invalid": [
+      {
+        "path": "C_efficiency_evolution/detailed_results/DreadPoor_Winter_Dawn-8B-TIES/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      },
+      {
+        "path": "C_efficiency_evolution/detailed_results/FINGU-AI_Chocolatine-Fusion-14B/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      },
+      {
+        "path": "C_efficiency_evolution/detailed_results/Intel_neural-chat-7b-v3-3/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      },
+      {
+        "path": "C_efficiency_evolution/detailed_results/L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      }
+    ],
+    "selected_rule": "文件名排序后首份 JSON；若该文件不可解析，则隔离该目录",
+    "selected_valid_count": 1860,
+    "selected_invalid_count": 3,
+    "selected_invalid": [
+      {
+        "directory": "FINGU-AI_Chocolatine-Fusion-14B",
+        "path": "C_efficiency_evolution/detailed_results/FINGU-AI_Chocolatine-Fusion-14B/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      },
+      {
+        "directory": "Intel_neural-chat-7b-v3-3",
+        "path": "C_efficiency_evolution/detailed_results/Intel_neural-chat-7b-v3-3/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      },
+      {
+        "directory": "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1",
+        "path": "C_efficiency_evolution/detailed_results/L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1/results_2025-02-13T18-27-04.338360.json",
+        "error": "JSONDecodeError"
+      }
+    ]
+  }
+}

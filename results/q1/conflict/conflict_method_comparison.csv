@@ -1,0 +1,4 @@
+first,second,union_unique_spearman,A1_high90_overlap_fraction
+C_equal_indicator,C_weighted_hierarchical,0.7669650873102987,0.7090412028900606
+C_equal_indicator,C_semantic_group,0.5065148860880803,0.3950400312438977
+C_semantic_group,C_weighted_hierarchical,0.8248136631861266,0.4956063268892794

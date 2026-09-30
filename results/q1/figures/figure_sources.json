@@ -1,0 +1,15 @@
+{
+  "experiment_version": "q1-revision-v2.1",
+  "seed": 7,
+  "input_sha256": {
+    "quality/hierarchical_weights.csv": "dde3c126e997d935792d4ded9cc051f4fe263effda099891c0ede32a3c16a657",
+    "conflict/primary_linkage.npy": "1cff4a7ffd2fcbb0f4ede6ff9abb8e93b7f4d53ec6b4daeb00e26dd51e7e32fe",
+    "quality/normalization_parameters.csv": "6e9aae71a8e90462b86c81d3f34eac2ed7f0181904cc521ef9834d9302570d93",
+    "mixture/nearest_train_distance.csv": "dd59f190e1cce323a0346871933a0759fad82751a372df347613950f36c3c04b",
+    "q_mapping/qmapped_coverage.csv": "fbf70451b7c1b0e71d020382c49f0955af294844f81108f1f6d7cfe2e41a543a",
+    "q_mapping/qmapped_placebo.csv": "0d1f9e2f4983c36a9dceb368e2d62a4a536afa9ad25caf9121bc11ca09d87984",
+    "q_mapping/qmapped_placebo_summary.csv": "efc33d172574fe89a5b85bdef37f8f8dff54078282485e39f76b48835b053406",
+    "conflict/weighted_pair_contributions.csv": "84441b2acf698fad5476d01e446fbe65e0575a139b040dde2b91bfda35982cd9",
+    "conflict/equal_pair_disagreement.csv": "d3f712a082a0ae2cfa34ffbfa63c15934858aa35db0f348500ac5720bd31fef1"
+  }
+}

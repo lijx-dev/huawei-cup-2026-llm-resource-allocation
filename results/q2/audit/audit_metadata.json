@@ -1,0 +1,93 @@
+{
+  "experiment_version": "q2-fusion-rerun-v1",
+  "stage": "Q2-P0",
+  "seed": 7,
+  "rule_version": "q2-fusion-rerun-v1-p0-1",
+  "audit_code_sha256": "bb4293b683b6eb3e6097c34ac79268d6751fa8a56b984111d13cc062e88e33a5",
+  "input_sha256": {
+    "data/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "data/real_attachments/B_scaling_laws/cerebras_training_log.csv": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+    "data/real_attachments/B_scaling_laws/scaling_baseline.csv": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+    "data/real_attachments/B_scaling_laws/published_scaling_data.csv": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "data/real_attachments/B_scaling_laws/supplementary_large_models.csv": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+    "data/real_attachments/B_scaling_laws/supplementary_large_baseline.csv": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+    "data/real_attachments/B_scaling_laws/open_model_family_metadata.csv": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064",
+    "data/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed"
+  },
+  "source_hash_unchanged": true,
+  "attachment_rows": {
+    "B1": 1176,
+    "B2": 1029,
+    "B3": 4000,
+    "B4": 57,
+    "B5": 44,
+    "B6": 360,
+    "B7": 450,
+    "B8": 1704,
+    "B9": 132,
+    "B10": 128,
+    "B11": 18,
+    "B12": 1386
+  },
+  "expected_row_mismatch_count": 0,
+  "manifest_size_mismatch_count": 0,
+  "invalid_numeric_rows": 4,
+  "duplicate_entries": 0,
+  "b6_b7": {
+    "n_b6": 360,
+    "n_b7": 450,
+    "n_overlap": 360,
+    "n_b7_new": 90,
+    "n_conflicting": 0
+  },
+  "b8_data_type_counts": {
+    "calibrated": 984,
+    "extrapolated": 720
+  },
+  "b1_scale_checkpoint_counts": {
+    "0.070542": 147,
+    "0.162405": 147,
+    "0.409009": 147,
+    "1.040867": 147,
+    "1.416184": 147,
+    "2.782831": 147,
+    "6.86104": 147,
+    "11.965825": 147
+  },
+  "b12_model_size_counts": {
+    "14m": 154,
+    "70m": 154,
+    "160m": 154,
+    "410m": 154,
+    "1b": 154,
+    "1.4b": 154,
+    "2.8b": 154,
+    "6.9b": 154,
+    "12b": 154
+  },
+  "b1_b12_step_set_overlap": 147,
+  "b3_exact_N_D_matches": 16,
+  "b3_exact_N_D_loss_matches": 0,
+  "unresolved": [
+    "B12 exact model_size to N_params_B mapping",
+    "B3 step versus B1/B12 step semantics",
+    "Q_score operational direction and B8 equivalence",
+    "cross-source Loss evaluation protocol"
+  ],
+  "status": "PASS_WITH_WARNINGS",
+  "actual_invalid_rows": 4,
+  "q1_quality_scores_sha256": "7fa6bfe43fd42995e9ef3e749c76fd5769e6083b3466211eabb4cf9a9c4425c2",
+  "missing_requested_design_document": "问题二_完整建模思路_扩展建模(1).md",
+  "available_design_document": "问题二_完整建模思路_扩展建模.md"
+}

@@ -1,0 +1,62 @@
+{
+  "experiment_version": "q2-fusion-rerun-v1",
+  "stage": "P5",
+  "status": "PASS_WITH_WARNINGS",
+  "seed": 7,
+  "message": "lambda 和模型形式均为情景",
+  "counts": {
+    "scenario_points": 216,
+    "pair_paths": 24
+  },
+  "input_sha256": {
+    "data/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "data/real_attachments/B_scaling_laws/cerebras_training_log.csv": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+    "data/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+    "data/real_attachments/B_scaling_laws/scaling_baseline.csv": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+    "data/real_attachments/B_scaling_laws/published_scaling_data.csv": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+    "data/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "data/real_attachments/B_scaling_laws/supplementary_large_models.csv": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+    "data/real_attachments/B_scaling_laws/supplementary_large_baseline.csv": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+    "data/real_attachments/B_scaling_laws/open_model_family_metadata.csv": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064",
+    "data/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed"
+  },
+  "q1_quality_scores_sha256": "7fa6bfe43fd42995e9ef3e749c76fd5769e6083b3466211eabb4cf9a9c4425c2",
+  "config_sha256": "07a646cfd39da0a60f6f4631b22c5c2fd3038255ffe87296615a09aad4f19fa6",
+  "code_sha256": {
+    "src/q2_v2/stages.py": "cc80a6f181b3bd3aefe6311bc0d09d1ba3677142c58c2941f69431070e0e2546",
+    "src/q2_v2/cli.py": "c3e0216aa8858d8e02c19bfc6b7ece8c969eb08a91d1c6f01760b602c0094882",
+    "src/q2_v2/audit.py": "e37da247fd7b1ca4640fe025056fd70722616d6ccd8e86e298fdca5f4921ce4c",
+    "src/q2_v2/detailed_report.py": "9346b39bd9a3258e54c656b18b40896b2a8cae1b492b6988e2ad740dab754890",
+    "src/q2_v2/__init__.py": "304bfa49ebadb03f1be187247855b949324ffa543c5c18445a7a3c0331aa1cbf",
+    "src/q2_v2/model.py": "fe83744e14a73bd57fe43c8154d6e76c526c86ff080260142b20156bb2fcb926"
+  },
+  "q1_model_sha256": "39c5d5dc13b6f0fbf68699bb45d2d8d18e28f81f0f46f5475311e6aa66bd1c33",
+  "versions": {
+    "python": "3.13.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "product_sha256": {
+    "results/q2_fusion_rerun_v1/generalized_law/marginal_effects.csv": "87e6000d5eedd3b34f6c41d55fc2f923e8b9aff461d5cf275f14406864e5129b",
+    "results/q2_fusion_rerun_v1/generalized_law/path_conditioned_pair_response.csv": "a4dce2b866c79a628d1a1fb00d942f5e88a85da30caa89c7f1a4ddc67a238729",
+    "results/q2_fusion_rerun_v1/generalized_law/scenario_grid.csv": "60800bd2cb6392c3b50c289bfb4cea50a30594ffdd0b4c830f615f7bd3330b40",
+    "results/q2_fusion_rerun_v1/generalized_law/form_sensitivity.csv": "9f383fbe803104196eb82aaeb22a333334df6d920163c585f94313b56b6db087",
+    "results/q2_fusion_rerun_v1/generalized_law/local_effect_intervals.csv": "a9e975b230ae4740a25351512ddfc2126683f524a44a0e8ce6250db0056ff3f2",
+    "results/q2_fusion_rerun_v1/generalized_law/q_n_substitution.csv": "599b70758719491b730838353ec187b88b58e5b514dd0034edd8b93f33bb4d54",
+    "results/q2_fusion_rerun_v1/generalized_law/elasticities.csv": "1b35055cc848878b90601f6a5da049785385d018c700e7c1d0a1906d0875f08a",
+    "results/q2_fusion_rerun_v1/generalized_law/p5_report.md": "60ff3c75c92a5ae1fb7f354eeb6b41734e409a4ab4199d53b1c94a82fcfa00b5"
+  },
+  "test_command": "/home/hsh/huawei/.venv/bin/python -m pytest -q tests/q2_v2/test_pipeline.py -k test_p5",
+  "test_exit_code": 0
+}

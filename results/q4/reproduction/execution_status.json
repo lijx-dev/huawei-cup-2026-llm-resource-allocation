@@ -1,0 +1,22 @@
+{
+  "q4_evidence.py": 0,
+  "q4_extra_probe.py": 0,
+  "q4_c8_p90.py": 0,
+  "q4_caliber2.py": 0,
+  "q4_gN_trace.py": 0,
+  "q4_closure.py": 0,
+  "q4_closure2.py": 0,
+  "q4_ref_repro.py": 0,
+  "q4_legs.py": 0,
+  "q4_legs_reweight.py": 0,
+  "q4_bounded_forecast.py": 0,
+  "q4_p1_chinchilla_rho.py": 0,
+  "q4_p1b_dynamics.py": 0,
+  "q4_p1c_schaeffer.py": 0,
+  "q4_p1d_channels.py": 0,
+  "q4_p1e_musr_check.py": 0,
+  "q4_p2a_cluster.py": 0,
+  "q4_p2b_eligibility.py": 0,
+  "q4_p2c_backtest.py": 0,
+  "_q4_c1c8_probe.py": 0
+}

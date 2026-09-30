@@ -1,0 +1,16 @@
+result,value,evidence_grade
+B1_E,1.6897975629343924,direct_fit
+B1_A,0.3539803206522069,direct_fit
+B1_B,1.2403055835469778,direct_fit
+B1_alpha,0.3399765819060624,direct_fit
+B1_beta,0.27987812854536964,direct_fit
+B1_LOSO_macro_RMSE,0.000146888185870675,held_out_validation
+B6_MQ_gamma,0.31789307006995426,semi_synthetic_calibration
+B6_M0_groupCV_RMSE,0.12876221766899937,semi_synthetic_calibration
+B6_MQ_groupCV_RMSE,0.07608654086791208,semi_synthetic_calibration
+B7_new_M0_RMSE,0.0589577606798815,held_out_validation
+B7_new_MQ_RMSE,0.0490941551034927,held_out_validation
+B8_positive_Q_Loss_groups,150.0,semi_synthetic_calibration
+medium_budget_Q0_N_star_billions,2.2611593988877297,scenario_assumption
+medium_budget_Q0_D_star_billions,54.39687271074477,scenario_assumption
+B10_B1_estimated_RMSE,0.001093827820122,extrapolation_reference

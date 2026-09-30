@@ -1,0 +1,23 @@
+field,raw_invalid_rows,raw_invalid_elements,unique_invalid_ids,duplicate_invalid_rows,already_excluded_structural_invalid,already_excluded_suspected,remaining_invalid_after_dedup,used_in_scoring,handling_rule
+dsir_books,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+dsir_wiki,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+dsir_math,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_word_count,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_num_sentences,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_unigram_entropy,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_frac_unique_words,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_frac_no_alph_words,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_frac_chars_top_2gram,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_frac_chars_top_3gram,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_lines_uppercase_letter_fraction,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_lines_ending_with_terminal_punctution_mark,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_lines_numerical_chars_fraction,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+rps_doc_mean_word_length,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+fineweb_edu,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+fluency_en,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+modernbert_cleanliness,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+modernbert_readability,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+modernbert_reasoning,13,78,13,0,13,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+modernbert_professionalism,6,36,6,0,6,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+qurater,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
+ad_en,0,0,0,0,0,0,0,False,stop_if_invalid_accepted; otherwise keep_v2_quarantine
